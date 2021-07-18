@@ -1,0 +1,23 @@
+.about-container {
+    margin-top: 100vh;
+    height: 160vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about {
+    height: 60vh;
+    width: 90%;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+.azure {
+    background-color: azure;
+}
+.transparent {
+    background-color: none;
+    border: none;
+    box-shadow: none;
+}

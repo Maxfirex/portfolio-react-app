@@ -7,6 +7,7 @@ import {
 import Home from './components/pages/Home';
 import Navbar from './components/layout/Navbar';
 import './App.scss';
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </div>
         </Router>
       </header>

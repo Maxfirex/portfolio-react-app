@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Users.scss';
-import Table from 'react-bootstrap/Table';
 
 interface User {
     id: number,
@@ -29,7 +28,7 @@ const Users = () => {
     return (
         <section>
             <h1>Users</h1>
-            <Table striped bordered hover responsive>
+            <table>
                 <thead>
                     <tr>
                         <th>#</th>
@@ -51,7 +50,7 @@ const Users = () => {
                         </tr>
                     ))}
                 </tbody>
-            </Table>
+            </table>
         </section>
     )
 }

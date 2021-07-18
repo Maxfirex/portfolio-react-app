@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background: linear-gradient(90deg, #1c1b1b 0%, #1a1717 100%);
+    color: white;
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: rgb(93, 93, 248);
+        }
+    }
+}
