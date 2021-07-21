@@ -8,16 +8,17 @@
     justify-content: center;
 }
 .about {
-    height: 60vh;
-    width: 90%;
-    border-radius: 10px;
-    opacity: 0.9;
+    height: 80vh;
+    width: 100%;
+    display: flex;
 }
-.azure {
-    background-color: azure;
-}
-.transparent {
-    background-color: none;
-    border: none;
-    box-shadow: none;
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
 }

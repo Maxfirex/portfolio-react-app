@@ -6,7 +6,7 @@ import './Home.scss';
 
 const Home = () => {
     return (
-        <div className="container">
+        <div id="top" className="container">
             <Hero />
             <About />
             <Contact />

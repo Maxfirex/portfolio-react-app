@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-// import { Button } from '../helpers/Button';
+import { HashLink as Link } from 'react-router-hash-link';
 import './Navbar.scss';
 
 function Navbar() {
@@ -25,18 +24,17 @@ function Navbar() {
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li className={`nav-item${active === 'home' ? ' nav-active' : ''}`}>
-                            <a className="nav-links" href="#home" onClick={() => closeMobileMenu('home')}>Home</a>
-                            {/* <Link to="/home" className="nav-links"  onClick={() => closeMobileMenu('home')}>Home</Link> */}
+                        <li className={`nav-item${active === 'hero' ? ' nav-active' : ''}`}>
+                            <Link smooth to="/home#top" className="nav-links"  onClick={() => closeMobileMenu('hero')}>Home</Link>
                         </li>
                         <li className={`nav-item${active === 'about' ? ' nav-active' : ''}`}>
-                            {/* <Link to="/about" className="nav-links" onClick={closeMobileMenu}>About</Link> */}
-                            <a className="nav-links" href="#about" onClick={() => closeMobileMenu('about')}>About</a>
+                            <Link smooth to="/home#about" className="nav-links" onClick={() => closeMobileMenu('about')}>About</Link>
                         </li>
                         <li className={`nav-item${active === 'contact' ? ' nav-active' : ''}`}>
-                            {/* <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>Contact</Link> */}
-                            <a className="nav-links" href="#contact" onClick={() => closeMobileMenu('contact')}>Contact</a>
-
+                            <Link smooth to="/home#contact" className="nav-links" onClick={() => closeMobileMenu('contact')}>Contact</Link>
+                        </li>
+                        <li className={`nav-item${active === 'projects' ? ' nav-active' : ''}`}>
+                            <Link smooth to="/projects" className="nav-links" onClick={() => closeMobileMenu('projects')}>Projects</Link>
                         </li>
                     </ul>
                 </div>
